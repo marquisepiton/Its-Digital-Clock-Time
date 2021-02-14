@@ -59,49 +59,56 @@ Thoughts: Maybe array of numbers will do the trick. Check for libraries or build
 
 
 **START:**
+**Not in order**
 
 
-'''
-**Function** Show/Set Current Time: 
+```
 
-// Function should be called AUTOMATICALLY when the user opens the page.
-    **Set:** Date object
-    **Get:** Current Time
-    **Display:** Current Time on the screen.
+FUNCTION: Show/Set Current Time: 
+
+   Function should be called AUTOMATICALLY when the user opens the page.
+   Set: Date object
+   Get: Current Time
+   Display: Current Time on the screen.
         
 
-'''
+```
+```
 
-**Funciton** Show/Set Date: 
-    **Set:** Date Objet
-    **Get:** Current Date
-    **Display:** Current Date on the screen. 
+FUNCTION: Show/Set Date: 
+    SET: The Date Objet from the date init
+    GET: The Current Date
+    Display: Current Date on the screen. 
 
-'''
-**Function** Change Hour Format:
+```
+```
 
-/* By Default, page will show 12 hour format. 
+FUNCTION: Change Hour Format:
+
+   By Default, page will show 12 hour format. 
    Thoughts: "Maybe use a while loop instead."  
-*/
-    **IF:** User clicks on the "12, 24 Hour Toggle Button" **THEN**
-        "The Clock" is going to change to 12 or 24 hour formats. 
-    **ELSE:**
-        Continue to show 12 hour format.
-        **Listen:** for "12, 24 Toggle Button Click. 
+    
+   IF: User clicks on the "12, 24 Hour Toggle Button" THEN
+      "The Clock" is going to change to 12 or 24 hour formats. 
+   ELSE:
+      Continue to show 12 hour format.
+      LISTENB: for "12, 24 Toggle Button Click. 
 
-// Same function should be called if the user is in the 24 hour format.
-// "12, 24 Hour Toggle Button" Should be looked to this function. 
-
-'''
-**Function** Increase time on clock:
-    //This is where the "setInterval()" will come in. 
-    **For** every second: 
-        Increment one second up on the timer.
-
-**Function:** Increase date on calendar date: 
+   Same function should be called if the user is in the 24 hour format.
+   "12, 24 Hour Toggle Button" Should be looked to this function. 
+```
+```
+FUNCTION: Increase time on clock:
+   This is where the "setInterval()" will come in. 
+   FOR: every second: 
+      Increment one second up on the timer.
+```
+```
+FUNCTION: Increase date on calendar date: 
     //Use "setInterval()"
-    **For** every 86,400,000 second:
-        increment the date once on the calendar. 
+    FOR: every 86,400,000 second:
+      increment the date once on the calendar. 
+```
 
 
 **END.**
