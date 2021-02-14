@@ -93,26 +93,32 @@ function displayClock() {
 
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
-    let amOrPm = 'AM';
+    let amOrPm = '';
 
     console.log(hoursin24);
+
+
+    //This will check if Morning or Afternoon.
+    if (hoursin24 >= 12) {
+        amOrPm = 'PM';
+    }
+    else{
+        amOrPm = 'AM';
+    }
 
 
 
 
     //This if statement will convert the 24 hours format into 12 hours format
     if (hoursin24 > 12 & militaryTime === false) {
-        console.log(hoursin24)
+        console.log(hoursin24);
         hoursin24 = (24 - hoursin24) - 12;
     }
 
     hoursin12 = Math.abs(hoursin24);
 
 
-    //This will check if Morning or Afternoon.
-    if (hoursin12 >= 12) {
-        amOrPm = 'PM';
-    }
+   
 
     //These lines of code is to the '0' for the single digit numbers in the clock.
     if (hoursin12 < 10) {
