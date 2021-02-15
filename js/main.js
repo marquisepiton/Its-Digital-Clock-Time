@@ -12,7 +12,7 @@ const convertToTwelve = document.querySelector('.twelveButton');
 const convertToTwentyFour = document.querySelector('.twenty-fourButton');
 
 //See the current time in unreadable format (Not needed).
-console.log(Date.now());
+//console.log(Date.now());
 /*
 Definition:
     - Prototype: Are the mechanism by which JavaScript objects inherit features from one another.
@@ -95,7 +95,7 @@ function displayClock() {
     let seconds = currentTime.getSeconds();
     let amOrPm = '';
 
-    console.log(hoursin24);
+    //console.log(hoursin24);
 
 
     //This will check if Morning or Afternoon.
@@ -111,7 +111,7 @@ function displayClock() {
 
     //This if statement will convert the 24 hours format into 12 hours format
     if (hoursin24 > 12 & militaryTime === false) {
-        console.log(hoursin24);
+        //console.log(hoursin24);
         hoursin24 = (24 - hoursin24) - 12;
     }
 
@@ -139,7 +139,7 @@ function displayClock() {
     // This will change the  "Div id=clock" inner information. 
     clock.innerHTML = timeNow;
     // Troubleshooting purposes.
-    console.log("\x1b[36m", timeNow);
+    //console.log("\x1b[36m", timeNow);
 }
 
 function displayDate() {
@@ -166,7 +166,7 @@ function displayDate() {
     let dateNow = month + '/' + day + '/' + year;
     calendar.innerHTML = dateNow;
     //Troubleshooting
-    console.log("\x1b[33m%s\x1b[0m", dateNow);
+    //console.log("\x1b[33m%s\x1b[0m", dateNow);
 
 }
 
